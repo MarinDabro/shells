@@ -10,7 +10,7 @@ alias x='nvim'
 
 alias xx='exit'
 
-alias www='live-server &'
+alias www='live-server --browser="qutebrowser" &'
 
 alias ct='ctags -R'
 
