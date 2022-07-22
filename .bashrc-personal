@@ -6,6 +6,8 @@ alias rman='~/bash/randomMan.sh'
 
 alias rwave='~/bash/randomWave.sh'
 
+alias pwave='~/bash/allWave.sh'
+
 alias man='alacritty -e man'
 
 alias tl='tldr'
