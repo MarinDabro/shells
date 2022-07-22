@@ -2,6 +2,14 @@ eval "$(zoxide init bash)"
 
 alias bl="bluetoothctl"
 
+alias rman='~/bash/randomMan.sh'
+
+alias rwave='~/bash/randomWave.sh'
+
+alias man='alacritty -e man'
+
+alias tl='tldr'
+
 alias y='~/bash/newTerm.sh'
 
 alias e='emacsclient -nw -a "emacs"'
