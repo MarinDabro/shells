@@ -2,9 +2,9 @@
 
 args=$@
 
-alacritty &
-
 if [ $@ ]
 then
-  nvim $@
+    alacritty -e nvim $@
+else
+    alacritty &
 fi
