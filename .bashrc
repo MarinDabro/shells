@@ -5,6 +5,24 @@ export HISTCONTROL=ignoreboth:erasedups
 export PAGER='most'
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+
+# nvim-lsp-installer PATHs
+export PATH="$HOME/.local/share/nvim/lsp_servers/bashls/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/cssls/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/emmet_ls//node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/eslint/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/graphql/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/html/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/jsonls/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/pyright/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/sumneko_lua/extension/client/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/taplo/bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/tsserver/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/yamlls/node_modules/.bin:$PATH"
+
+
 ~/bash/randomWave.sh
 
 #Ibus settings if you need them
@@ -28,23 +46,33 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+shopt -s autocd
+shopt -s cmdhist
+shopt -s histappend
+
 #ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
 
 # vim kybinds
 set -o vi
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
 
 ### ALIASES ###
+alias starship-upgrade="curl -sS https://starship.rs/install.sh | sh"
+
+alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 #list
-alias ls='ls --color=auto'
-alias la='ls -a | cat'
-alias ll='ls -alFh'
-alias l='ls | cat'
-alias l.="ls -A | egrep '^\.'"
+alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias l.='exa -a | egrep "^\."'
+alias l='ls'
 
 #fix obvious typo's
-alias cd..='cd ..'
+alias cd='z'
 alias pdw='pwd'
 alias udpate='sudo pacman -Syyu'
 alias upate='sudo pacman -Syyu'
@@ -362,3 +390,5 @@ alias personal='cp -Rf /personal/* ~'
 #sysinfo-retro
 #cpufetch
 #colorscript random
+
+eval "$(starship init bash)"
