@@ -31,6 +31,9 @@ fi
 #ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
 
+# vim kybinds
+set -o vi
+
 ### ALIASES ###
 
 #list
