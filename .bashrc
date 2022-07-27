@@ -23,16 +23,15 @@ export PATH="$HOME/.local/share/nvim/lsp_servers/tsserver/node_modules/.bin:$PAT
 export PATH="$HOME/.local/share/nvim/lsp_servers/yamlls/node_modules/.bin:$PATH"
 
 
-~/bash/randomWave.sh
-
+#~/bash/randomWave.sh
+paleofetch
+colorscript -e 12
 #Ibus settings if you need them
 #type ibus-setup in terminal to change settings and start the daemon
 #delete the hashtags of the next lines and restart
 #export GTK_IM_MODULE=ibus
 #export XMODIFIERS=@im=dbus
 #export QT_IM_MODULE=ibus
-
-PS1='[\u@\h \W]\$ '
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
