@@ -3,7 +3,6 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export HISTCONTROL=ignoreboth:erasedups
 export PAGER='most'
-export PATH="$HOME/.emacs.d/bin:$PATH"
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
@@ -22,10 +21,8 @@ export PATH="$HOME/.local/share/nvim/lsp_servers/taplo/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/tsserver/node_modules/.bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/yamlls/node_modules/.bin:$PATH"
 
+tput rmam
 
-#~/bash/randomWave.sh
-paleofetch
-~/bash/bars.sh
 #Ibus settings if you need them
 #type ibus-setup in terminal to change settings and start the daemon
 #delete the hashtags of the next lines and restart
@@ -62,13 +59,6 @@ alias starship-upgrade="curl -sS https://starship.rs/install.sh | sh"
 
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
-#list
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias l.='exa -a | egrep "^\."'
-alias l='ls'
 
 #fix obvious typo's
 alias cd='z'
@@ -375,6 +365,10 @@ alias personal='cp -Rf /personal/* ~'
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 # reporting tools - install when not installed
+#~/bash/randomWave.sh
+~/shells/paleofetch
+~/shells/bars.sh
+tput smam
 #neofetch
 #screenfetch
 #alsi
