@@ -25,7 +25,7 @@ export PATH="$HOME/.local/share/nvim/lsp_servers/yamlls/node_modules/.bin:$PATH"
 
 #~/bash/randomWave.sh
 paleofetch
-colorscript -e 12
+~/bash/bars.sh
 #Ibus settings if you need them
 #type ibus-setup in terminal to change settings and start the daemon
 #delete the hashtags of the next lines and restart
