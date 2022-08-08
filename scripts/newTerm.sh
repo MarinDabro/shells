@@ -4,7 +4,8 @@ args=$@
 
 if [ $@ ]
 then
-    alacritty -e nvim $@
+    alacritty &
+    nvim $@
 else
     alacritty &
 fi
