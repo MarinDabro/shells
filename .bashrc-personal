@@ -50,6 +50,8 @@ alias gmpush='~/shells/scripts/massPush.sh'
 
 alias ginit='~/shells/scripts/ginit.sh'
 
+alias zoom-timer='echo "librewolf https://us02web.zoom.us/j/84783303111?pwd=dHB1TVZ2cmtMYS9OdkVWUXN4MlNrQT09" | at 09:03'
+
 alias ..='cd ..'
 
 alias ...='cd ../..'

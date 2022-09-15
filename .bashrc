@@ -6,7 +6,6 @@ export PAGER='most'
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
-
 # nvim-lsp-installer PATHs
 export PATH="$HOME/.local/share/nvim/lsp_servers/bashls/node_modules/.bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/cssls/node_modules/.bin:$PATH"
@@ -21,7 +20,7 @@ export PATH="$HOME/.local/share/nvim/lsp_servers/taplo/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/tsserver/node_modules/.bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/yamlls/node_modules/.bin:$PATH"
 
-tput rmam
+#tput rmam
 
 #Ibus settings if you need them
 #type ibus-setup in terminal to change settings and start the daemon
@@ -366,9 +365,7 @@ alias personal='cp -Rf /personal/* ~'
 
 # reporting tools - install when not installed
 #~/bash/randomWave.sh
-~/shells/paleofetch
-~/shells/bars.sh
-tput smam
+#tput smam
 #neofetch
 #screenfetch
 #alsi
@@ -384,4 +381,10 @@ tput smam
 #cpufetch
 #colorscript random
 
+~/shells/paleofetch
+~/shells/bars.sh
 eval "$(starship init bash)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
