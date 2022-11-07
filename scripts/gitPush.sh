@@ -1,11 +1,22 @@
 #! /bin/bash
 
-#test
 
 all_args=("$@")
-first_arg="$1"
-rest_args="${@:2}"
+all_paths=()
+message=()
+path_num=1
 
-git add $first_arg
-git commit -m "$rest_args"
+for I in $@
+do
+  if [ -d $I ] | [ -f $I ] | [ $I="." ] ; then
+    all_paths+=($I)
+    path_num+=1
+  else 
+    message+=($I)
+  fi
+done
+
+
+git add ${all_paths:0}
+git commit -m "${message:0}"
 git push
