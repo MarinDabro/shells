@@ -2,6 +2,7 @@
 
 args=$@
 
+#test
 
 if [ $@ ]
 then
