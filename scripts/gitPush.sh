@@ -3,20 +3,21 @@
 
 all_args=("$@")
 all_paths=()
-message=()
-path_num=1
+message=$@[-1]
 
 for I in $@
 do
-  if [ -d $I ] | [ -f $I ] | [ $I="." ] ; then
+  if [ -d $I ] || [ -f $I ]; then
     all_paths+=($I)
-    path_num+=1
-  else 
-    message+=($I)
   fi
 done
 
 
-git add ${all_paths:0}
-git commit -m "${message:0}"
+for P in $all_paths
+do
+  git add $P
+done
+echo "finished with adding"
+
+git commit -m "$@"
 git push
