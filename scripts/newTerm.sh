@@ -2,6 +2,8 @@
 
 args=$@
 
+#test
+
 if [ $@ ]
 then
     alacritty &
