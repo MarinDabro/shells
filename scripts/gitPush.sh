@@ -1,4 +1,10 @@
+#! /bin/bash
 
-git add $1
-git commit -m $2
+all_args=("$@")
+first_arg="$1"
+second_args="$2"
+rest_args=("${all_args[@]:2}")
+
+git add $first_arg
+git commit -m $rest_args
 git push
