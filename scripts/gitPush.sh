@@ -1,5 +1,7 @@
 #! /bin/bash
 
+#test
+
 all_args=("$@")
 first_arg="$1"
 rest_args="${@:2}"
