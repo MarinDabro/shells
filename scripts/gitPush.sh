@@ -10,7 +10,7 @@ last=${args[$pos]}
 
 declare -a paths
 paths=()
-message="hello"
+message=""
 
 for ARG in ${args[@]}
 do 
