@@ -19,6 +19,9 @@ export PATH="$HOME/.local/share/nvim/lsp_servers/sumneko_lua/extension/client/no
 export PATH="$HOME/.local/share/nvim/lsp_servers/taplo/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/tsserver/node_modules/.bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/yamlls/node_modules/.bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/ember/node_modules/.bin:$PATH"
+
+export PATH="$HOME/.local/share/nvim/lsp_servers/rome/node_modules/.bin:$PATH"
 
 #tput rmam
 

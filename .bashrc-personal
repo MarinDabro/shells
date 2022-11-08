@@ -44,13 +44,15 @@ alias gp='git pull'
 
 alias gmpull='~/shells/scripts/massPull.sh'
 
-alias gg='git add . && git commit -m ":)" && git push'
+alias gg='~/shells/scripts/gitPush.sh'
 
 alias gmpush='~/shells/scripts/massPush.sh'
 
 alias ginit='~/shells/scripts/ginit.sh'
 
 alias zoom-timer='echo "librewolf https://us02web.zoom.us/j/84783303111?pwd=dHB1TVZ2cmtMYS9OdkVWUXN4MlNrQT09" | at 09:03'
+
+alias bb='cp ~/.bashrc ~/shells/.bashrc && cp ~/.bashrc-personal ~/shells/.bashrc-personal && cd ~/shells'
 
 alias ..='cd ..'
 
