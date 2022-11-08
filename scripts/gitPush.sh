@@ -23,9 +23,7 @@ do
   fi 
 done 
 
-echo "finished with adding"
-echo "$paths"
 
-git add $paths
+git add ${paths[*]// /|} 
 git commit -m "$message"
 git push

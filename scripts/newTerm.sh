@@ -2,7 +2,7 @@
 
 args=$@
 
-#test2
+#test4
 
 if [ $@ ]
 then
