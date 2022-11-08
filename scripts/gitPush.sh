@@ -23,7 +23,6 @@ do
   fi 
 done 
 
-
 git add ${paths[*]// /|} 
 git commit -m "$message"
 git push
