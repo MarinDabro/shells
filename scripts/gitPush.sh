@@ -2,6 +2,7 @@
 
 args=$@
 
+
 declare -a paths
 paths=()
 

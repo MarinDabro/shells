@@ -2,7 +2,6 @@
 
 args=$@
 
-#test4
 
 if [ $@ ]
 then
