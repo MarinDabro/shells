@@ -15,6 +15,9 @@ do
   elif [ -f "$ARG" ] ; then
      paths+=($ARG)
   else
+     if [ ${#paths[@]} -eq 0 ] ; then
+       paths+=(".")
+     fi
      message+=" $ARG"
   fi 
 done 
