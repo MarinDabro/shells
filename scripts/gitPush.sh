@@ -1,15 +1,10 @@
 #! /bin/bash
 
-#test
-
 args=$@
-
-echo $args
-pos=$(( ${#args[*]} - 1 ))
-last=${args[$pos]}
 
 declare -a paths
 paths=()
+
 message=""
 
 for ARG in ${args[@]}
