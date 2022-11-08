@@ -1,23 +1,31 @@
 #! /bin/bash
 
+#test
 
-all_args=("$@")
-all_paths=()
-message=$@[-1]
+args=$@
 
-for I in $@
-do
-  if [ -d $I ] || [ -f $I ]; then
-    all_paths+=($I)
-  fi
-done
+echo $args
+pos=$(( ${#args[*]} - 1 ))
+last=${args[$pos]}
 
+declare -a paths
+paths=()
+message="hello"
 
-for P in $all_paths
-do
-  git add $P
-done
+for ARG in ${args[@]}
+do 
+  if [ -d "$ARG" ] ; then
+     paths+=($ARG)
+  elif [ -f "$ARG" ] ; then
+     paths+=($ARG)
+  else
+     message+=" $ARG"
+  fi 
+done 
+
 echo "finished with adding"
+echo "$paths"
 
-git commit -m "$@"
+git add $paths
+git commit -m "$message"
 git push
