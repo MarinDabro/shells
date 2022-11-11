@@ -1,5 +1,6 @@
 #! /bin/bash
 
+#test
 args=$@
 
 declare -a paths
