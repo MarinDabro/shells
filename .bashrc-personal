@@ -26,6 +26,8 @@ alias e='emacsclient -nw -a "emacs"'
 
 alias x='nvim'
 
+alias css='~/shells/scripts/cssTemplate.sh'
+
 alias xx='exit'
 
 alias www='live-server --browser="qutebrowser" &'
@@ -52,7 +54,7 @@ alias ginit='~/shells/scripts/ginit.sh'
 
 alias zoom-timer='echo "librewolf https://us02web.zoom.us/j/84783303111?pwd=dHB1TVZ2cmtMYS9OdkVWUXN4MlNrQT09" | at 09:03'
 
-alias bb='cp ~/.bashrc ~/shells/.bashrc && cp ~/.bashrc-personal ~/shells/.bashrc-personal && cd ~/shells'
+alias bashcp='cp ~/.bashrc ~/shells/.bashrc && cp ~/.bashrc-personal ~/shells/.bashrc-personal && cd ~/shells'
 
 alias ..='cd ..'
 
