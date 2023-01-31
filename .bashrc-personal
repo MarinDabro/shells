@@ -40,9 +40,15 @@ alias f='ranger'
 
 alias F='sudo ranger'
 
-alias gc='git clone'
+alias gcl='git clone'
+
+alias gs='git status'
+
+alias gc='git checkout'
 
 alias gp='git pull'
+
+alias gm='git merge'
 
 alias gmpull='~/shells/scripts/massPull.sh'
 
