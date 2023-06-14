@@ -386,6 +386,7 @@ alias personal='cp -Rf /personal/* ~'
 
 ~/shells/paleofetch
 ~/shells/bars.sh
+pwd
 eval "$(starship init bash)"
 
 export NVM_DIR="$HOME/.nvm"
