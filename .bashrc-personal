@@ -62,6 +62,12 @@ alias zoom-timer='echo "librewolf https://us02web.zoom.us/j/84783303111?pwd=dHB1
 
 alias bashcp='cp ~/.bashrc ~/shells/.bashrc && cp ~/.bashrc-personal ~/shells/.bashrc-personal && cd ~/shells'
 
+alias bbf='~/shells/scripts/bbFrontend.sh'
+
+alias gpgMigrate='~/shells/scripts/gpgMigrate.sh'
+
+alias awsplease='./get_aws_config.sh 687842713118'
+
 alias ..='cd ..'
 
 alias ...='cd ../..'
