@@ -68,6 +68,10 @@ alias gpgMigrate='~/shells/scripts/gpgMigrate.sh'
 
 alias awsplease='./get_aws_config.sh 687842713118'
 
+alias bbupdate='./scripts/for_each.sh core.repos "git submodule update --remote"'
+
+alias bbpull='./scripts/for_each.sh core.repos "git pull"'
+
 alias ..='cd ..'
 
 alias ...='cd ../..'
