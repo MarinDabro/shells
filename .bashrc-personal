@@ -72,6 +72,8 @@ alias bbupdate='./scripts/for_each.sh core.repos "git submodule update --remote"
 
 alias bbpull='./scripts/for_each.sh core.repos "git pull"'
 
+alias pid='ps aux | grep'
+
 alias ..='cd ..'
 
 alias ...='cd ../..'
